@@ -10,9 +10,21 @@
     background-color: black;
 }
 
-.select{
-    background-color: transparent;
+.form-select{
+    background-color: transparent !important;
     border:none;
-    color: white;
     margin-left: 6px;
+    width: 90px;
+    option{
+        background-color: black;
+        border: none;
+    }
+}
+
+#quick-action{
+    padding: 15px;
+}
+
+.mt-3{
+    margin-top: 30px;
 }
