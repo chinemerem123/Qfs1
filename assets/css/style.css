@@ -21,9 +21,50 @@
 }
 
 #quick-action {
-  padding: 15px;
+  padding: 20px;
 }
 
 .mt-3 {
   margin-top: 30px;
+}
+
+.mt-2 {
+  margin-top: 20px;
+}
+
+.item-quick {
+  position: relative;
+  text-decoration: none;
+  align-items: center;
+  padding: 15px;
+  border: 1.5px solid rgb(42, 42, 42);
+  border-radius: 10px;
+  color: white;
+}
+.item-quick:hover {
+  border: 1.5px solid rgb(37, 62, 255);
+}
+.item-quick span {
+  margin-left: 10px;
+  color: white;
+  font-size: 14px;
+}
+.item-quick img {
+  position: absolute;
+  right: 10px;
+}
+
+.other-action {
+  padding: 10px;
+  border: 1.5px solid rgb(42, 42, 42);
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 12px;
+  text-decoration: none;
+}
+.other-action:hover {
+  border: 1.5px solid rgb(37, 62, 255);
+}
+.other-action span {
+  color: white;
 }/*# sourceMappingURL=style.css.map */
