@@ -32,6 +32,10 @@
   margin-top: 20px;
 }
 
+.mt-1 {
+  margin-top: 10px;
+}
+
 .item-quick {
   position: relative;
   text-decoration: none;
