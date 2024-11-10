@@ -82,6 +82,9 @@
 }
 
 @media screen and (max-width: 800px) {
+  body {
+    overflow: hidden;
+  }
   #crypto-ls {
     display: none;
   }
@@ -100,5 +103,6 @@
     display: block !important;
     height: 100vh;
     overflow-y: auto;
+    margin-bottom: 25px;
   }
 }/*# sourceMappingURL=style.css.map */
