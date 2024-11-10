@@ -71,4 +71,8 @@
 }
 .other-action span {
   color: white;
+}
+
+#coin-amt {
+  text-align: right;
 }/*# sourceMappingURL=style.css.map */
