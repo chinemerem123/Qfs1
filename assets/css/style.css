@@ -83,6 +83,7 @@
   }
   .baln {
     position: sticky !important;
-    top: 0 !important;
+    top: 20px !important;
+    margin-top: -30px !important;
   }
 }/*# sourceMappingURL=style.css.map */
