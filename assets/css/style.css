@@ -75,4 +75,14 @@
 
 #coin-amt {
   text-align: right;
+}
+
+@media screen and (max-width: 800px) {
+  #hide {
+    display: none !important;
+  }
+  .baln {
+    position: sticky !important;
+    top: 0 !important;
+  }
 }/*# sourceMappingURL=style.css.map */
