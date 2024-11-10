@@ -82,8 +82,17 @@ img{
 #coin-amt{
     text-align: right;
 }
+#m-over{
+    display: none !important;
+}
 
 @media screen and (max-width:800px){
+    #crypto-ls{
+        display: none;
+    }
+    #quicky-des{
+        display: none !important;
+    }
     #hide{
         display: none !important;
     }
@@ -92,5 +101,10 @@ img{
         position: sticky !important;
         top: 20px !important;
         margin-top: -30px !important;
+    }
+    #m-over{
+        display:block !important;
+        height: 100vh;
+        overflow-y: auto;
     }
 }
