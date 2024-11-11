@@ -140,8 +140,9 @@ img{
 
         .scrol{
             position: relative;
-            height: 100vh;
-            overflow-y:scroll ;
+            height: 95vh;
+            overflow-y:auto;
+            margin-bottom: 20px;
         }
     }
     
@@ -161,7 +162,7 @@ img{
     #baln{
      position: sticky;
      top: 0;
-     z-index: 100;
+     z-index: 10;
        
     }
 
