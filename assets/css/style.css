@@ -127,6 +127,9 @@ body {
   height: 100vh;
   overflow-y: auto;
 }
+.hp-main-layout::-webkit-scrollbar {
+  visibility: hidden;
+}
 
 @media screen and (max-width: 800px) {
   #action-quick {
@@ -134,6 +137,10 @@ body {
     margin-top: 15px;
     overflow-y: auto;
     margin-bottom: 40px;
+    overflow-x: hidden;
+  }
+  #action-quick::-webkit-scrollbar {
+    visibility: hidden;
   }
   .hp-main-layout-content {
     height: 100px !important;

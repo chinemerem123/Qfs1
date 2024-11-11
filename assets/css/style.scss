@@ -138,6 +138,10 @@ body{
 .hp-main-layout{
     height: 100vh;
     overflow-y: auto;
+
+    &::-webkit-scrollbar{
+        visibility: hidden;
+    }
 }
 
 @media screen and (max-width:800px){
@@ -148,6 +152,11 @@ body{
         margin-top: 15px;
         overflow-y: auto;
         margin-bottom: 40px;
+        overflow-x: hidden;
+
+        &::-webkit-scrollbar{
+            visibility: hidden;
+        }
     }
     
 
