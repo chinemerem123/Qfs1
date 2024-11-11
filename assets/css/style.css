@@ -123,6 +123,9 @@
     visibility: hidden;
   }
   .header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 15px;
