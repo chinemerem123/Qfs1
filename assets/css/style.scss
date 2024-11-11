@@ -122,16 +122,11 @@ img{
 
 @media screen and (max-width:800px){
 
-    // body{
+    // .hp-main-layout{
     //     height: 100% !important;
-    //     overflow: hidden !important;
+    //     overflow-y: auto;
+
     // }
-
-    .hp-main-layout{
-        height: 100% !important;
-        overflow-y: auto;
-
-    }
 
     .hp-main-layout-content{
         height: 100px !important;
