@@ -124,32 +124,7 @@ img{
  
 }
 
-#action-quick{
-    position: relative;
-    height: 55vh;
-    margin-top: 15px;
-}
-
-body{
-    overflow: hidden;
-    height: 100vh;
-}
-
-.hp-main-layout{
-    height: 100vh;
-    overflow-y: auto;
-}
-
 @media screen and (max-width:800px){
-
-
-    #action-quick{
-        height: 55vh;
-        margin-top: 15px;
-        overflow-y: auto;
-        margin-bottom: 40px;
-    }
-    
 
     // .hp-main-layout{
     //     height: 100% !important;

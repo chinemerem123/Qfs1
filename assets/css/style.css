@@ -5,6 +5,10 @@
   margin-right: 6px;
 }
 
+main {
+  height: 100vh !important;
+}
+
 .baln {
   background-color: black;
 }
@@ -108,15 +112,39 @@
   margin-left: 10px;
 }
 
+#action-quick {
+  position: relative;
+  height: 55vh;
+  margin-top: 15px;
+}
+
+body {
+  overflow: hidden;
+  height: 100vh;
+}
+
+.hp-main-layout {
+  height: 100vh;
+  overflow-y: auto;
+}
+
 @media screen and (max-width: 800px) {
+  #action-quick {
+    height: 55vh;
+    margin-top: 15px;
+    overflow-y: auto;
+    margin-bottom: 40px;
+  }
   .hp-main-layout-content {
     height: 100px !important;
     overflow-y: auto;
   }
   .hp-main-layout-content .scrol {
+    margin-top: 15px;
     position: relative;
     height: 90vh;
     overflow-y: auto;
+    background-color: red;
     margin-bottom: 20px;
   }
   .hp-main-layout-content .scrol::-webkit-scrollbar {
