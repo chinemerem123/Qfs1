@@ -122,10 +122,10 @@ img{
 
 @media screen and (max-width:800px){
 
-    body{
-        height: 100% !important;
-        overflow: hidden !important;
-    }
+    // body{
+    //     height: 100% !important;
+    //     overflow: hidden !important;
+    // }
 
     .hp-main-layout{
         height: 100% !important;
@@ -140,7 +140,7 @@ img{
 
         .scrol{
             position: relative;
-            height: 95vh;
+            height: 90vh;
             overflow-y:auto;
             margin-bottom: 20px;
         }
