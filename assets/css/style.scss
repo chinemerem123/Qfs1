@@ -143,6 +143,9 @@ img{
             height: 90vh;
             overflow-y:auto;
             margin-bottom: 20px;
+            &::-webkit-scrollbar{
+                visibility: hidden;
+            }
         }
     }
     

@@ -123,6 +123,9 @@
     overflow-y: auto;
     margin-bottom: 20px;
   }
+  .hp-main-layout-content .scrol::-webkit-scrollbar {
+    visibility: hidden;
+  }
   .header {
     padding-top: 20px;
     padding-bottom: 20px;
