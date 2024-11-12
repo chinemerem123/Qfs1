@@ -144,6 +144,33 @@ body{
     }
 }
 
+.bottom-menu{
+    width: 100%;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    background-color: rgb(25, 25, 25);
+    gap: 20px;
+
+    a{
+        text-decoration: none;
+        color: gray;
+        text-align: center;
+        scale: 0.8;
+        svg{
+            fill: gray;
+        }
+        span{
+            color: gray;
+        }
+        &:active{
+            color: white;
+        }
+    }
+}
+
 @media screen and (max-width:800px){
 
 

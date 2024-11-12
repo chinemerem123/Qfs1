@@ -131,6 +131,32 @@ body {
   visibility: hidden;
 }
 
+.bottom-menu {
+  width: 100%;
+  padding: 15px;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  background-color: rgb(25, 25, 25);
+  gap: 20px;
+}
+.bottom-menu a {
+  text-decoration: none;
+  color: gray;
+  text-align: center;
+  scale: 0.8;
+}
+.bottom-menu a svg {
+  fill: gray;
+}
+.bottom-menu a span {
+  color: gray;
+}
+.bottom-menu a:active {
+  color: white;
+}
+
 @media screen and (max-width: 800px) {
   #action-quick {
     height: 55vh;
