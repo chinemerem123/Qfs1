@@ -166,6 +166,52 @@ body {
   text-align: center;
 }
 
+#coin-view-hold {
+  width: 70%;
+  height: 100vh;
+  position: relative;
+  left: 15%;
+  border: none;
+}
+#coin-view-hold #quick-action {
+  border-radius: 10px;
+  border: none;
+  margin-top: 20px;
+}
+#coin-view-hold .coin-header {
+  margin-top: 20px;
+  align-items: center;
+}
+#coin-view-hold .coin-header img {
+  width: 40px;
+  height: 40px;
+}
+#coin-view-hold .coin-header .hod {
+  position: relative;
+}
+#coin-view-hold .coin-header .hod .h3 {
+  font-weight: bold;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+#coin-view-hold .coin-header .hod span {
+  float: left;
+  position: relative;
+  top: -10px;
+  margin-left: 6px;
+}
+#coin-view-hold .char-box {
+  width: 100%;
+  height: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+#coin-view-hold .char-box #the-view {
+  height: 100%;
+  margin: 0 auto;
+}
+
 @media screen and (max-width: 800px) {
   #action-quick {
     height: 300px;
@@ -208,5 +254,15 @@ body {
     position: sticky;
     top: 0;
     z-index: 10;
+  }
+  #coin-view-hold {
+    width: 100%;
+    left: 0%;
+    height: 100vh;
+  }
+  #coin-view-hold .coin-scroll {
+    height: 700px;
+    overflow-y: auto;
+    margin-bottom: 200px;
   }
 }/*# sourceMappingURL=style.css.map */
