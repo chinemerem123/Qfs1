@@ -196,16 +196,19 @@ body{
     .coin-header{
         margin-top: 20px;
         align-items: center;
+        display: flex;
         img{
             width: 40px;
             height: 40px;
+            position: relative;
+            top: -5px;
         }
         .hod{
             position: relative;
-            .h3{
+            left: 3px;
+            .h4{
                 font-weight: bold;
                 margin-left: 10px;
-                margin-top:5px ;
             }
             span{
                float: left;
