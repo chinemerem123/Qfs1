@@ -65,38 +65,20 @@
         <div class="px-32 flex-shrink-1 col d-flex">
             <div class="row h-100 m-auto w-100 align-items-center" style="max-width: 390px;">
                 <div class="col-12">
-                    <h1 class="mb-0 mb-sm-24">Login</h1>
+                    <h3 class="mb-0 mb-sm-24">Enter Passcode</h3>
 
-                    <form action="/passcode.html" class="mt-16 mt-sm-32 mb-8">
-                        <div class="mb-16">
-                            <label for="loginEmail" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="loginEmail" placeholder="you@example.com">
+                    <form action="/dashboard.html" class="mt-16 mt-sm-32 mb-8">
+                        <div class="mb-16 d-flex" id="passcode">
+                            <input type="text" class="form-control" maxlength="1" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))">
+                            <input type="text" class="form-control" maxlength="1" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))">
+                            <input type="text" class="form-control" maxlength="1" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))">
+                            <input type="text" class="form-control" maxlength="1" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))">
                         </div>
 
-                        <div class="d-none mb-16" data-step="login-step-1">
-                            <label for="loginPassword" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="loginPassword">
-                        </div>
-
-                        <div class="d-none row align-items-center justify-content-between mb-16" data-step="login-step-1">
-                         
-
-                            <div class="col hp-flex-none w-auto">
-                                <a class="hp-button text-black-80 hp-text-color-dark-40" href="/auth-modern-recover.html">Forgot Password?</a>
-                            </div>
-                        </div>
-
-                        <button type="button" data-button-step="login-step-1" class="btn btn-primary w-100">
-                            Continue
+                        <button type="submit" data-button-step="login-step-1" class="btn btn-primary w-100">
+                            Confirm
                         </button>
-
-                        <button type="submit" data-step="login-step-1" class="d-none btn btn-primary w-100">
-                            Sign in
-                        </button>
-                        <a href="" class="btn google-btn d-flex text-decoration-none text-white">
-                            <img width="20" height="20" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNCIgaGVpZ2h0PSIzNCIgdmlld0JveD0iMCAwIDQ4IDQ4Ij48cGF0aCBmaWxsPSIjZmZjMTA3IiBkPSJNNDMuNjExIDIwLjA4M0g0MlYyMEgyNHY4aDExLjMwM2MtMS42NDkgNC42NTctNi4wOCA4LTExLjMwMyA4Yy02LjYyNyAwLTEyLTUuMzczLTEyLTEyczUuMzczLTEyIDEyLTEyYzMuMDU5IDAgNS44NDIgMS4xNTQgNy45NjEgMy4wMzlsNS42NTctNS42NTdDMzQuMDQ2IDYuMDUzIDI5LjI2OCA0IDI0IDRDMTIuOTU1IDQgNCAxMi45NTUgNCAyNHM4Ljk1NSAyMCAyMCAyMHMyMC04Ljk1NSAyMC0yMGMwLTEuMzQxLS4xMzgtMi42NS0uMzg5LTMuOTE3Ii8+PHBhdGggZmlsbD0iI2ZmM2QwMCIgZD0ibTYuMzA2IDE0LjY5MWw2LjU3MSA0LjgxOUMxNC42NTUgMTUuMTA4IDE4Ljk2MSAxMiAyNCAxMmMzLjA1OSAwIDUuODQyIDEuMTU0IDcuOTYxIDMuMDM5bDUuNjU3LTUuNjU3QzM0LjA0NiA2LjA1MyAyOS4yNjggNCAyNCA0QzE2LjMxOCA0IDkuNjU2IDguMzM3IDYuMzA2IDE0LjY5MSIvPjxwYXRoIGZpbGw9IiM0Y2FmNTAiIGQ9Ik0yNCA0NGM1LjE2NiAwIDkuODYtMS45NzcgMTMuNDA5LTUuMTkybC02LjE5LTUuMjM4QTExLjkgMTEuOSAwIDAgMSAyNCAzNmMtNS4yMDIgMC05LjYxOS0zLjMxNy0xMS4yODMtNy45NDZsLTYuNTIyIDUuMDI1QzkuNTA1IDM5LjU1NiAxNi4yMjcgNDQgMjQgNDQiLz48cGF0aCBmaWxsPSIjMTk3NmQyIiBkPSJNNDMuNjExIDIwLjA4M0g0MlYyMEgyNHY4aDExLjMwM2ExMi4wNCAxMi4wNCAwIDAgMS00LjA4NyA1LjU3MWwuMDAzLS4wMDJsNi4xOSA1LjIzOEMzNi45NzEgMzkuMjA1IDQ0IDM0IDQ0IDI0YzAtMS4zNDEtLjEzOC0yLjY1LS4zODktMy45MTciLz48L3N2Zz4=" alt="">
-                            Login with Google
-                        </a>
+                      
                     </form>
 
                     <div class="col-12 hp-form-info text-center">

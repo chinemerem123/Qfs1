@@ -157,6 +157,15 @@ body {
   color: white;
 }
 
+#passcode {
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+#passcode input {
+  text-align: center;
+}
+
 @media screen and (max-width: 800px) {
   #action-quick {
     height: 300px;

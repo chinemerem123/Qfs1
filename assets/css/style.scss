@@ -171,6 +171,15 @@ body{
     }
 }
 
+#passcode{
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    input{
+        text-align: center;
+    }
+}
+
 @media screen and (max-width:800px){
 
 
