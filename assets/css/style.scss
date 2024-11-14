@@ -278,8 +278,50 @@ margin-top:4px;
     }
 }
 
+#coin-list-hold{
+    width: 100%;
+    border: none;
+    height: 80vh;
+    overflow: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+     &::-webkit-scrollbar{
+        visibility:hidden;
+     }
+
+    #coin-list-card{
+        width: 65%;
+        padding: 20px;
+        border-radius: 20px;
+        border: none;
+    margin-bottom: 100px;
+
+
+        .header{
+            padding: 0;
+            position: sticky;
+            top: 0px;
+            background-color: #141414;
+            .h5{
+                margin-top: 15px;
+            }
+        }
+    }
+}
+
 @media screen and (max-width:800px){
 
+    #coin-list-hold{
+        #coin-list-card{
+            width: 100%;
+            background-color: transparent;
+
+            .header{
+               background-color:#1F1F1F;
+            }
+        }
+    }
 
     .coin-head{
         img{
