@@ -310,6 +310,13 @@ margin-top:4px;
     }
 }
 
+#send-hold{
+    border:none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media screen and (max-width:800px){
 
     #coin-list-hold{

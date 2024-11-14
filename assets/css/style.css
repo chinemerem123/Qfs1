@@ -280,6 +280,13 @@ body {
   margin-top: 15px;
 }
 
+#send-hold {
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media screen and (max-width: 800px) {
   #coin-list-hold #coin-list-card {
     width: 100%;
