@@ -267,6 +267,7 @@ body {
     height: 700px;
     overflow-y: auto;
     margin-bottom: 200px;
+    overflow-x: hidden;
   }
   .tran-item-8 {
     scale: 0.8;
