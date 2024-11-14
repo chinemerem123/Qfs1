@@ -268,4 +268,10 @@ body {
     overflow-y: auto;
     margin-bottom: 200px;
   }
+  .tran-item-8 {
+    scale: 0.8;
+  }
+  .tran-item-7 {
+    scale: 0.7;
+  }
 }/*# sourceMappingURL=style.css.map */
