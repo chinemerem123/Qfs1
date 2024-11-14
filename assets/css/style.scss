@@ -363,6 +363,10 @@ margin-top:4px;
             overflow-y: auto;
             margin-bottom: 200px;
             overflow-x: hidden;
+
+            &::-webkit-scrollbar{
+                visibility: hidden;
+            }
         }
     }
 

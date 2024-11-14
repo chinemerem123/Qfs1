@@ -313,6 +313,9 @@ body {
     margin-bottom: 200px;
     overflow-x: hidden;
   }
+  #coin-view-hold .coin-scroll::-webkit-scrollbar {
+    visibility: hidden;
+  }
   .tran-item-8 {
     scale: 0.8;
   }
