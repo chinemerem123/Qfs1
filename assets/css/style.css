@@ -215,7 +215,51 @@ body {
   margin: 0 auto;
 }
 
+.coin-head img {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  top: -3px;
+}
+.coin-head .hod {
+  position: relative;
+  margin-left: 8px;
+}
+.coin-head .hod:nth-child(1) .text-gray {
+  color: gray;
+}
+.coin-head .hod .h4 {
+  font-weight: bold;
+  margin-top: 4px;
+}
+.coin-head .hod .rate {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.text-gray {
+  color: gray;
+}
+
+.coin-right {
+  text-align: right;
+  position: relative;
+  right: 10px;
+}
+.coin-right .h4 {
+  font-weight: bold;
+  margin-top: 4px;
+}
+
 @media screen and (max-width: 800px) {
+  .coin-head img {
+    width: 30px;
+    height: 30px;
+  }
+  .coin-head .hod {
+    scale: 0.7;
+    margin-left: -10px;
+  }
   #action-quick {
     height: 300px;
     margin-top: 15px;
