@@ -282,12 +282,18 @@ body {
 
 #send-hold {
   border: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 50%;
+  position: relative;
+  height: 400px;
+  left: 25%;
+  top: calc(50% - 250px);
 }
 
 @media screen and (max-width: 800px) {
+  #send-hold {
+    width: 100%;
+    left: 0%;
+  }
   #coin-list-hold #coin-list-card {
     width: 100%;
     background-color: transparent;
