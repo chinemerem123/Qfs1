@@ -301,7 +301,107 @@ body {
   align-items: center;
 }
 
+.swap-box {
+  position: relative;
+  width: 60%;
+  background-color: transparent;
+  left: 20%;
+  padding: 20px;
+  border: none;
+}
+.swap-box .from {
+  padding: 30px;
+  border-radius: 20px;
+  position: relative;
+  background-color: #202020;
+  border: none;
+  position: relative;
+}
+.swap-box .from .coin-amt .coin-log-name img {
+  width: 30px;
+  height: 30px;
+}
+.swap-box .from .coin-amt input {
+  position: absolute;
+  right: 30px;
+  text-align: right;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  width: 50%;
+}
+.swap-box .swap-logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: #141618;
+  left: calc(50% - 30px);
+  top: calc(50% - 30px);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.swap-box .swap-logo svg {
+  width: 30px;
+  height: 30px;
+}
+.swap-box .to {
+  padding: 30px;
+  border-radius: 20px;
+  position: relative;
+  background-color: #202020;
+  border: none;
+  position: relative;
+  margin-top: 40px;
+}
+.swap-box .to .coin-amt .coin-sel img {
+  width: 30px;
+  height: 30px;
+}
+.swap-box .to .coin-amt .coin-sel #token-swap {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: gray;
+}
+.swap-box .to .coin-amt .coin-sel #token-swap option {
+  background-color: #24272a;
+}
+.swap-box .to .coin-amt input {
+  position: absolute;
+  right: 30px;
+  text-align: right;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.swap-btn {
+  padding: 12px;
+  width: 58%;
+  position: relative;
+  left: 21%;
+  top: 20px;
+}
+
 @media screen and (max-width: 800px) {
+  .swap-box {
+    width: 100%;
+    left: 0%;
+  }
+  .swap-btn {
+    width: 96%;
+    left: 2%;
+    top: 15px;
+  }
   #send-hold {
     width: 100%;
     left: 0%;
