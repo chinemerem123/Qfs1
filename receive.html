@@ -236,10 +236,15 @@
          <div class="hp-main-layout-content">
 
        <div class="card hp-bg-dark-100" id="send-hold">
-       <div class="h5 text-center">Receive</div>
+       <div class="h5 text-center mt-1">Receive</div>
      <div class="qr-hold mt-2">
-
+        <img src="" id="qrImg" alt="">
      </div>
+
+     <div class="name text-center mt-2">
+        <span id="address">6pL8DCBZhgAwhsY3SzrEDdg4ATCia3yDS7LMBYQ3rCED</span>
+     </div>
+     <button class="btn btn-primary mt-2" id="paste-button">Copy</button>
        </div>
       
        
@@ -480,6 +485,27 @@
 
     <!-- Custom -->
     <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/paste.js"></script>
+
+    
+<script>
+
+    let qrcode=document.getElementById("qrImg");
+    let add="bc1qsm2j3amkhezulrpld3axpsl7w367s0pppnxx5q";
+    let am=localStorage.getItem("crypto-amount");
+    let cryn=localStorage.getItem("crytoname");
+    
+    qrcode.src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data="+cryn+":"+add+"?amount="+am;
+    
+    document.querySelector(".add-show").value=add;
+    document.querySelector("#cry-name").innerText=cryn;
+    document.querySelector(".amt-show").value=am;
+
+    
+    
+    
+      </script>
+    
 </body>
 
 </html>

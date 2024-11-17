@@ -284,18 +284,21 @@ body {
   border: none;
   width: 50%;
   position: relative;
-  height: 400px;
+  height: 420px;
   left: 25%;
   top: calc(50% - 250px);
   padding: 20px;
 }
 #send-hold .qr-hold {
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
   background-color: white;
   position: relative;
-  left: calc(50% - 100px);
+  left: calc(50% - 90px);
   border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (max-width: 800px) {
