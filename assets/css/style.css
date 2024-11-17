@@ -287,6 +287,15 @@ body {
   height: 400px;
   left: 25%;
   top: calc(50% - 250px);
+  padding: 20px;
+}
+#send-hold .qr-hold {
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  position: relative;
+  left: calc(50% - 100px);
+  border-radius: 15px;
 }
 
 @media screen and (max-width: 800px) {

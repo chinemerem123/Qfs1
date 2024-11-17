@@ -317,6 +317,15 @@ margin-top:4px;
     height: 400px;
     left: calc(50% - 25%);
     top: calc(50% - 250px);
+    padding: 20px;
+
+    .qr-hold{
+        width: 200px;
+        height: 200px;background-color: white;
+        position: relative;
+        left: calc(50% - 100px);
+        border-radius: 15px;
+    }
 }
 
 @media screen and (max-width:800px){
