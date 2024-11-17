@@ -286,7 +286,7 @@ body {
   position: relative;
   height: 400px;
   left: 25%;
-  top: calc(50% - 250px);
+  top: calc(50% - 260px);
   padding: 20px;
 }
 #send-hold .qr-hold {
