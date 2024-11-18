@@ -501,7 +501,56 @@ margin-top: 40px;
     }
 }
 
+#market{
+    border-radius:0px ;
+    height: 100vh;
+    overflow-y: auto;
+    margin-bottom: 200px;
+    border: none;
+    overflow-x: hidden;
+    &::-webkit-scrollbar{
+        visibility: hidden;
+    }
+
+    #nft-head{
+        padding: 40px;
+        border-radius: 15px;
+        border: none;
+        background-image: url("https://incrypto.merku.love/static/media/abstract.f625ecde569de561c781.svg");
+        background-position: center;
+        background-size: cover;
+    }
+
+    .nft-item{
+        padding: 15px;
+        border: none;
+        background-color: rgba(21, 21, 21,0.7);
+        #nft-img{
+            height: 250px;
+            border-radius: 15px;
+        }
+        #price-tag{
+            padding: 10px;
+            border: none;
+            background-image: url("https://incrypto.merku.love/static/media/abstract.f625ecde569de561c781.svg");
+
+            #nft-token{
+                width: 25px;
+                height: 25px;
+            }
+            .price{
+                margin-left: 6px;
+            }
+        }
+    }
+}
+
 @media screen and (max-width:800px){
+
+    #market{
+        height: 80vh;
+        margin-bottom: 200px !important;
+    }
 
     #back-home{
         display: block;
