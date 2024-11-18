@@ -337,7 +337,7 @@ margin-top:4px;
 width:60%;
 background-color: transparent;
 left: calc(50% - 30%);
-padding: 20px;
+padding: 10px;
 border: none;
 
 .from{
@@ -443,6 +443,36 @@ margin-top: 40px;
     position: relative;
     left: calc(50% - 29%);
     top: 20px;
+}
+
+#notification{
+    border: none;
+    height: 80vh;
+    overflow-y: auto;
+    padding: 10px;
+    &::-webkit-scrollbar{
+        visibility: hidden;
+    }
+    .noti-hold{
+        margin-top: 10px;
+        span{
+            color: gray;
+        }
+        .card{
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 15px;
+            .header{
+            align-items: center; 
+            padding: 0;
+            margin: 0;       
+            }
+            .text{
+                padding: 5px;
+                margin-top: 10px;
+            }
+        }
+    }
 }
 
 @media screen and (max-width:800px){
