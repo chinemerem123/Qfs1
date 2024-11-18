@@ -423,7 +423,33 @@ body {
   margin-top: 10px;
 }
 
+#back-home {
+  display: none;
+}
+
+.active svg {
+  fill: white !important;
+}
+.active span {
+  color: white !important;
+}
+
+#history {
+  height: 80vh;
+  border-radius: 15px;
+  padding: 10px;
+  border: none;
+  overflow: auto;
+  margin-bottom: 100px;
+}
+#history::-webkit-scrollbar {
+  visibility: hidden;
+}
+
 @media screen and (max-width: 800px) {
+  #back-home {
+    display: block;
+  }
   .swap-box {
     width: 100%;
     left: 0%;
@@ -436,6 +462,7 @@ body {
   #send-hold {
     width: 100%;
     left: 0%;
+    margin-top: 30px;
   }
   #coin-list-hold #coin-list-card {
     width: 100%;

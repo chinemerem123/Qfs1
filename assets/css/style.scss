@@ -475,7 +475,37 @@ margin-top: 40px;
     }
 }
 
+#back-home{
+    display: none;
+}
+
+.active{
+    svg{
+        fill: white !important;
+    }
+    span{
+        color: white !important;
+    }
+}
+
+#history{
+    height: 80vh;
+    border-radius: 15px;
+    padding: 10px;
+    border: none;
+    overflow: auto;
+    margin-bottom: 100px;
+
+    &::-webkit-scrollbar{
+        visibility: hidden;
+    }
+}
+
 @media screen and (max-width:800px){
+
+    #back-home{
+        display: block;
+    }
 
     .swap-box{
         width: 100%;
@@ -491,6 +521,7 @@ margin-top: 40px;
     #send-hold{
 width: 100%;
 left: calc(50% - 50%);
+margin-top: 30px;
     }
 
     #coin-list-hold{
