@@ -632,20 +632,97 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="centeredBackdropLabel">Modal title</h5>
+                    <h5 class="modal-title" id="centeredBackdropLabel">Listing Details</h5>
                     <button type="button" class="btn-close hp-bg-none d-flex align-items-center justify-content-center" data-bs-dismiss="modal" aria-label="Close">
                         <i class="ri-close-line hp-text-color-dark-0 lh-1" style="font-size: 24px;"></i>
                     </button>
                 </div>
 
                 <div class="modal-body">
-                    <p>This is a vertically centered modal.</p>
+                   <div class="des d-flex">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIiqzhOGE06Srb28G2OL7kEGkg5LI4LsJ9PQ&s" alt="">
+                    <div class="main-des">
+                        <span class="text-success">Dan Tourlan</span><br>
+                        <span class="h4">Cryc #2</span><br>
+                        <span class="text-gray">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</span>
+                    </div>
+                   </div>
+
+                   <div class="card mt-2" id="contract">
+                    <div class="row">
+                        <div class="col-6">
+                            <span class="text-gray">Contract Address</span>
+                        </div>
+                        <div class="col-6" style="text-align: right;">
+                            <span class="">33454ty54rfutr4...</span>
+                        </div>
+                    </div>
+
+                    <div class="row  mt-1">
+                        <div class="col-6">
+                            <span class="text-gray">Token ID</span>
+                        </div>
+                        <div class="col-6" style="text-align: right;">
+                            <span class="">54ty54rftg876...</span>
+                        </div>
+                    </div>
+
+                    <div class="row  mt-1">
+                        <div class="col-6">
+                            <span class="text-gray">Blockchain</span>
+                        </div>
+                        <div class="col-6" style="text-align: right;">
+                            <span class="">Ethereum</span>
+                        </div>
+                    </div>
+
+                   </div>
+
+                   <div class="card mt-2" id="contract">
+
+                    <div class="row">
+                        <div class="col-6">
+                            <span class="text-gray">Sale Methods</span>
+                        </div>
+                        <div class="col-6" style="text-align: right;">
+                            <span class="">Fixed Price</span>
+                        </div>
+                    </div>
+
+
+                   </div>
+
+                   <div class="item-price mt-2">
+                    <div class="row">
+                        <label for="price">Price</label>
+                        <div class="col-8">
+                            <input type="text" class="form-control mt-1" disabled id="price" value="1240.04">
+                        </div>
+                        <div class="col-4">
+                            <div class="coin-sel">
+                                <select id="token-swap" class="form-select">
+                                    <option value="usdt"> USDT</option>
+                                    <option value="ethereum"> Ethereum</option>
+                                    <option value="solana"> Solana</option>
+                                    <option value="tron"> Tron</option>
+                                    <option value="bnb"> BNB</option>
+                                    <option value="litecoin"> Litecoin</option>
+                                    <option value="matic"> Matic</option>
+                                </select>
+                                
+                            </div>
+                        </div>
+
+                        <div class="footer mt-2">
+                            <button class="btn btn-primary w-100">Purchase NFT</button>
+                        </div>
+                        
+                    </div>
+                   </div>
+                  
                 </div>
 
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-text" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Understood</button>
-                </div>
+               
             </div>
         </div>
     </div>

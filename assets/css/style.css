@@ -487,6 +487,28 @@ body {
   margin-left: 6px;
 }
 
+.modal-body .des img {
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+}
+.modal-body .des .main-des {
+  margin-left: 10px;
+}
+.modal-body #contract {
+  padding: 10px;
+  font-size: 13px;
+  border-radius: 10px;
+}
+.modal-body .coin-sel {
+  margin-top: 10px;
+  border: 1px solid rgb(53, 53, 53);
+  border-radius: 6px;
+}
+.modal-body .coin-sel select {
+  width: 100%;
+}
+
 @media screen and (max-width: 800px) {
   #market {
     height: 80vh;

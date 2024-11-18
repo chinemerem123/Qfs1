@@ -545,6 +545,34 @@ margin-top: 40px;
     }
 }
 
+.modal-body{
+    .des{
+        img{
+            width: 120px;
+            height: 120px;
+            border-radius: 10px;
+        }
+        .main-des{
+            margin-left: 10px;
+        }
+    }
+#contract{
+    padding: 10px;
+    font-size: 13px;
+    border-radius: 10px;
+}
+
+.coin-sel{
+    margin-top: 10px;
+ border: 1px solid rgb(53, 53, 53);
+ border-radius: 6px;
+
+ select{
+    width: 100%;
+ }
+}
+}
+
 @media screen and (max-width:800px){
 
     #market{
