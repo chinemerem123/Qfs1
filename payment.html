@@ -252,7 +252,7 @@
                                     <input type="" id="amt-d" class="form-control" disabled> 
                                 </div>
                                 <div class="col-3" style="justify-content: center; align-items: center; display: flex;">
-                                <span class="text-gray" style="font-size: 14px; cursor: pointer;">copy</span>
+                                <span class="text-gray" id="copy-amt" style="font-size: 14px; cursor: pointer;">copy</span>
                                 </div>
                             </div>
                           
@@ -270,7 +270,7 @@
                                     <input type="" id="add-d" class="form-control" disabled> 
                                 </div>
                                 <div class="col-3" style="justify-content: center; align-items: center; display: flex;">
-                                <span class="text-gray" style="font-size: 14px; cursor: pointer;">copy</span>
+                                <span class="text-gray" id="copy-add" style="font-size: 14px; cursor: pointer;">copy</span>
                                 </div>
                             </div>
                           
@@ -323,16 +323,47 @@
 
     <script>
        let amo=localStorage.getItem("payment-amt");  
-       let tokenName="USDT";
-       let walletAddress="0x247ABa40d166BA0C90E988d1158Bbb70B172ee6C"; 
+       let tokenName="bitcoin";
+       let add="0x247ABa40d166BA0C90E988d1158Bbb70B172ee6C"; 
        let qrcode=document.getElementById("qrImg");
 
     document.getElementById("amt-d").value=amo;
-    document.getElementById("add-d").value=walletAddress;
+    document.getElementById("add-d").value=add;
 
-    qrcode.src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data="+tokenName+":"+walletAddress+"?amount="+amo;
+    qrcode.src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data="+tokenName+":"+add+"?amount="+amo;
        
+
+    //CODE FOR COPYING AMOUNT STARTS HERE
+    const copyAmt=document.getElementById("copy-amt");
+copyAmt.addEventListener('click', clipboardCopy);
+async function clipboardCopy() {
+  let am = document.querySelector("#amt-d").value;
+  await navigator.clipboard.writeText(am);
+  copyAmt.textContent="Copied"
+  setInterval(() => {
+      copyAmt.textContent="Copy"
+  }, 5000);
+}
+
+ //CODE FOR COPYING AMOUNT ENDS HERE
+
+
+     //CODE FOR COPYING AMOUNT STARTS HERE
+     const copyAdd=document.getElementById("copy-add");
+copyAdd.addEventListener('click', clipboardCopy2);
+async function clipboardCopy2() {
+  let ad = document.querySelector("#add-d").value;
+  await navigator.clipboard.writeText(ad);
+  copyAdd.textContent="Copied"
+  setInterval(() => {
+      copyAdd.textContent="Copy"
+  }, 5000);
+}
+
+ //CODE FOR COPYING AMOUNT ENDS HERE
     </script>
+
+   
 
 </body>
 

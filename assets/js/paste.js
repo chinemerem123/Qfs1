@@ -11,3 +11,16 @@ async function clipboardCopy() {
       pasteButton.textContent="Copy"
   }, 5000);
 }
+
+const copyAmt=document.getElementById("copy-amt");
+
+alert("feee");
+copyAmt.addEventListener('click', clipboardCopy);
+async function clipboardCopy() {
+  let am = document.querySelector("#amt-d").value;
+  await navigator.clipboard.writeText(am);
+  copyAmt.textContent="Copied"
+  setInterval(() => {
+      copyAmt.textContent="Copy"
+  }, 5000);
+}
