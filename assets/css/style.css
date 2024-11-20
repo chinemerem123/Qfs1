@@ -540,7 +540,73 @@ body {
   background-color: transparent;
 }
 
+#profile-hold {
+  border: none;
+}
+#profile-hold a #pro-hold {
+  padding: 15px;
+  border-radius: 10px;
+  background-color: rgba(17, 18, 18, 0.5);
+  transition: 0.3s;
+}
+#profile-hold a #pro-hold:hover {
+  background-color: rgba(17, 18, 18, 0.9);
+}
+#profile-hold a #pro-hold .icon-name {
+  align-items: center;
+}
+#profile-hold a #pro-hold .icon-name span {
+  margin-left: 10px;
+}
+
+#update-profile {
+  border: none;
+}
+#update-profile .img-hold {
+  position: relative;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+}
+#update-profile .img-hold img {
+  width: 150px;
+  border-radius: 50%;
+  position: relative;
+  left: calc(50% - 75px);
+}
+#update-profile .img-hold .upload {
+  width: 50px;
+  height: 50px;
+  background-color: #141414;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 3px solid #202020;
+  position: absolute;
+  right: 80px;
+  margin-top: 40px;
+  cursor: pointer;
+}
+#update-profile .img-hold .upload input {
+  display: none;
+}
+
 @media screen and (max-width: 800px) {
+  #update-profile .img-hold img {
+    width: 100px;
+    height: 100px;
+    left: calc(50% - 50px);
+  }
+  #update-profile .img-hold .upload {
+    right: 95px;
+    width: 40px;
+    height: 40px;
+  }
+  #update-profile form {
+    margin-top: 20px;
+  }
   #send-amount-hold {
     width: 100%;
     left: 0%;
