@@ -238,17 +238,49 @@
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 256 256"><path fill="white" d="M128 26a102 102 0 1 0 102 102A102.12 102.12 0 0 0 128 26m0 192a90 90 0 1 1 90-90a90.1 90.1 0 0 1-90 90m46-90a6 6 0 0 1-6 6h-65.51l21.75 21.76a6 6 0 1 1-8.48 8.48l-32-32a6 6 0 0 1 0-8.48l32-32a6 6 0 0 1 8.48 8.48L102.49 122H168a6 6 0 0 1 6 6"/></svg>
                 Back</a>
 
-<form action="/payment.html">
-       <div class="card hp-bg-dark-100 send-amt" id="send-amount-hold">
-        <div class="h5 text-center mt-2">Enter amount to receive</div>
-        <div class="mb mt-2">
-            <label for="amount">Enter amount</label>
-            <input type="text" class="form-control mt-1" required id="wallet-amt" placeholder="2000">
-        </div>
-        <button class="btn btn-primary mt-2" id="tog-rec">Continue</button>
-       </div>
-    </form>
+                <div class="card hp-bg-dark-100 send-scan" id="send-amount-hold">
+                    <div class="h5 text-center mt-2">Payment Details</div>
+                    <div class="qr-hold mt-1">
+                        <img src="" id="qrImg" alt="">
+                     </div>
 
+                     <div class="det-hold mt-3">
+                        <span>Amount</span><br>
+                        <div class="mb mt-1">
+                            <div class="row">
+                                <div class="col-9">
+                                    <input type="" id="amt-d" class="form-control" disabled> 
+                                </div>
+                                <div class="col-3" style="justify-content: center; align-items: center; display: flex;">
+                                <span class="text-gray" style="font-size: 14px; cursor: pointer;">copy</span>
+                                </div>
+                            </div>
+                          
+                        </div>
+
+                        
+                        
+                     </div>
+
+                     <div class="det-hold mt-2">
+                        <span>Address</span><br>
+                        <div class="mb mt-1">
+                            <div class="row">
+                                <div class="col-9">
+                                    <input type="" id="add-d" class="form-control" disabled> 
+                                </div>
+                                <div class="col-3" style="justify-content: center; align-items: center; display: flex;">
+                                <span class="text-gray" style="font-size: 14px; cursor: pointer;">copy</span>
+                                </div>
+                            </div>
+                          
+                        </div>
+
+                        
+                        
+                     </div>
+
+                   </div>
    
       
        
@@ -288,6 +320,19 @@
     <script src="/assets/js/main.js"></script>
 
     <script src="/assets/js/receive.js"></script>
+
+    <script>
+       let amo=localStorage.getItem("payment-amt");  
+       let tokenName="USDT";
+       let walletAddress="0x247ABa40d166BA0C90E988d1158Bbb70B172ee6C"; 
+       let qrcode=document.getElementById("qrImg");
+
+    document.getElementById("amt-d").value=amo;
+    document.getElementById("add-d").value=walletAddress;
+
+    qrcode.src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data="+tokenName+":"+walletAddress+"?amount="+amo;
+       
+    </script>
 
 </body>
 
