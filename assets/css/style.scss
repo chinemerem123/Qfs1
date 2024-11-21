@@ -704,8 +704,16 @@ span{
     }
 }
 
+.row-m{
+    margin-top: 20px;
+}
+
 
 @media screen and (max-width:800px){
+
+    .row-m{
+        margin-top: 0px;
+    }
 
     .mt-sm-2{
         margin-top:15px ;
