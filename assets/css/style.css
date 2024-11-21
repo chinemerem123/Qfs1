@@ -628,12 +628,12 @@ body {
   margin-left: 15px;
 }
 
-.row-m {
+#row-m {
   margin-top: 20px;
 }
 
 @media screen and (max-width: 800px) {
-  .row-m {
+  #row-m {
     margin-top: 0px;
   }
   .mt-sm-2 {
