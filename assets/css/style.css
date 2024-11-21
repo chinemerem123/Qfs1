@@ -593,7 +593,51 @@ body {
   display: none;
 }
 
+#buy-hold {
+  border: none;
+  height: 83vh;
+  margin-bottom: 200px !important;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border-radius: 0px;
+}
+#buy-hold::-webkit-scrollbar {
+  display: none;
+}
+#buy-hold #back {
+  display: none;
+}
+#buy-hold #card-buy {
+  color: white;
+}
+#buy-hold #card-buy .card {
+  border: none;
+  padding: 15px;
+  border-radius: 15px;
+  position: relative;
+}
+#buy-hold #card-buy .card .d-flex {
+  align-items: center;
+}
+#buy-hold #card-buy .card .d-flex img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+#buy-hold #card-buy .card .d-flex span {
+  margin-left: 15px;
+}
+
 @media screen and (max-width: 800px) {
+  .mt-sm-2 {
+    margin-top: 15px;
+  }
+  #buy-hold {
+    height: 85vh;
+  }
+  #buy-hold #back {
+    display: block;
+  }
   #update-profile .img-hold img {
     width: 100px;
     height: 100px;

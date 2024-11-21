@@ -666,8 +666,56 @@ align-items: center;
     }
 }
 
+#buy-hold{
+    border: none;
+    height: 83vh;
+    margin-bottom: 200px !important;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-radius: 0px;
+    &::-webkit-scrollbar{
+        display: none;
+    }
+    #back{
+        display: none;
+    }
+
+    #card-buy{
+        color: white;
+  
+        .card{
+            border: none;
+            padding: 15px;
+            border-radius: 15px;
+          position: relative;
+          .d-flex{
+           align-items: center;
+           img{
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+        }
+span{
+    margin-left: 15px;
+}        
+          }
+           
+        }
+    }
+}
+
 
 @media screen and (max-width:800px){
+
+    .mt-sm-2{
+        margin-top:15px ;
+    }
+    #buy-hold{
+        height: 85vh;
+        #back{
+            display: block;
+        }
+    }
 
     #update-profile{
         .img-hold{
