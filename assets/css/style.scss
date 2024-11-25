@@ -795,6 +795,18 @@ width: 100%;
 left: calc(50% - 50%);
 margin-top: 30px;
     }
+    .send-details-icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{
+            width: 30px;
+            height: 30px;
+        }
+        span{
+            margin-left:10px;
+        }
+    }
 
     #coin-list-hold{
         #coin-list-card{
