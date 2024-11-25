@@ -289,6 +289,18 @@ body {
   top: calc(50% - 260px);
   padding: 20px;
 }
+#send-hold .send-details-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#send-hold .send-details-icon img {
+  width: 30px;
+  height: 30px;
+}
+#send-hold .send-details-icon span {
+  margin-left: 10px;
+}
 #send-hold .qr-hold {
   width: 180px;
   height: 180px;
