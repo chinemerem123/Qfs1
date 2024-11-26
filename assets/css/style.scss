@@ -786,6 +786,30 @@ background-color: transparent;
 }
 
 
+.out-order{
+    background-color: rgb(255, 92, 92);
+    height: 300px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    padding: 30px;
+    display: none;
+}
+
+
+#scroll-pay{
+    border: none;
+    background-color: transparent;
+    height: 85vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-radius: 0;
+    margin-bottom: 100px !important;
+    &::-webkit-scrollbar{
+        display: none;
+    }
+
+}
 
 
 @media screen and (max-width:800px){
