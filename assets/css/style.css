@@ -681,6 +681,27 @@ body {
   position: relative;
   width: 50%;
   left: 25%;
+  border-radius: 0px;
+  background-color: transparent;
+}
+#network #network-item {
+  border: none;
+  border-radius: 10px;
+}
+#network #network-item .img-hold {
+  padding: 15px;
+}
+#network #network-item .img-hold img {
+  width: 30px;
+}
+#network #network-item .img-hold span {
+  margin-left: 10px;
+}
+#network #network-item .net {
+  padding: 15px;
+  text-align: right;
+  margin-top: 3px;
+  color: gray;
 }
 
 @media screen and (max-width: 800px) {

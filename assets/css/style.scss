@@ -759,7 +759,33 @@ margin-bottom: 100px !important;
 position: relative;
 width: 50%;
 left: calc(50% - 25%);
+border-radius: 0px;
+background-color: transparent;
+
+#network-item{
+    border: none;
+    border-radius: 10px;
+    .img-hold{
+        padding: 15px;
+    
+        img{
+            width: 30px;
+        }
+        span{
+            margin-left: 10px;
+        }
+    }
+
+    .net{
+        padding: 15px;
+        text-align: right;
+        margin-top: 3px;
+        color: gray;
+    }
 }
+}
+
+
 
 
 @media screen and (max-width:800px){
@@ -767,6 +793,7 @@ left: calc(50% - 25%);
     #network{
         width: 100%;
         left: calc(50% - 50%);
+        
     }
 
     #row-m{
