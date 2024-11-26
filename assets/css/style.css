@@ -664,6 +664,14 @@ body {
   top: 0;
 }
 
+.f-13 {
+  font-size: 13px;
+}
+
+.ms-1 {
+  margin-left: 10px;
+}
+
 @media screen and (max-width: 800px) {
   #row-m {
     margin-top: 0px;
