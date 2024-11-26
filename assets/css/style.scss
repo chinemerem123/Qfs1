@@ -750,8 +750,24 @@ span{
 }
 
 
+#network{
+    border: none;
+    height: 80vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+margin-bottom: 100px !important;
+position: relative;
+width: 50%;
+left: calc(50% - 25%);
+}
+
 
 @media screen and (max-width:800px){
+
+    #network{
+        width: 100%;
+        left: calc(50% - 50%);
+    }
 
     #row-m{
         margin-top: 0px;
