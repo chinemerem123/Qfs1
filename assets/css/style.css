@@ -714,6 +714,16 @@ body {
   display: none;
 }
 
+.confirmed {
+  background-color: rgb(0, 163, 71);
+  height: 300px;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  padding: 30px;
+  display: none;
+}
+
 #scroll-pay {
   border: none;
   background-color: transparent;

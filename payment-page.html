@@ -47,7 +47,7 @@
     <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
 
     <title>
-        Coin-view
+        payment send
     </title>
 </head>
 
@@ -215,6 +215,13 @@
         <a href="#" class="btn btn mt-2">Back to Payment Page</a>
         </div>
 
+        <div class="confirmed">
+            <div class="h3 mt-3">Paid and <br>Confirmed!</div>
+               
+            
+                    <a href="#" class="btn btn mt-2">Back to Payment Page</a>
+                    </div>
+
         <div class="hp-main-layout">
 
          <div class="header hp-bg-dark-90 w-100">
@@ -294,7 +301,7 @@
                         
                      </div>
 
-                    <a href="#" class="btn btn-primary mt-2">I have made payment</a>
+                    <a href="#" class="btn btn-primary mt-2" id="payment-made">I have made payment</a>
 
                    </div>
    <br>
@@ -342,6 +349,13 @@
     }
     
     countdown( "ten-countdown", 10, 0 );
+
+    let paymentMade=document.getElementById("payment-made");
+
+    paymentMade.addEventListener('click',()=>{
+        document.querySelector(".hp-main-layout").style.display="none";
+        document.querySelector(".confirmed").style.display="block";
+    })
 </script>
 
     <!-- Plugin -->
